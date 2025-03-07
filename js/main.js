@@ -30,6 +30,7 @@ let sts = false;
 // first button for add a data to storage
 btnAdd.addEventListener("click", function (e) {
   if (eventName.value == "" || place.value == "" || dateChoosen.value == "") {
+    alert("please enter all data");
     
   } else if (
     Date.parse(new Date(dateChoosen.value).toLocaleDateString()) >
@@ -47,7 +48,7 @@ btnAdd.addEventListener("click", function (e) {
     Date.parse(new Date(dateChoosen.value).toLocaleDateString()) ==
     Date.parse(new Date().toLocaleDateString())
   ) {
-    confirm("please find another day");
+    alert("please find chosen date in afetr this day");
     
   }
   
@@ -155,7 +156,7 @@ deleAll.addEventListener("click", function () {
 }  );
    
 let lastend= new Date().getFullYear();
-console.log(lastend)
+
 let end = document.querySelector(".copy");
 let cop= document.querySelector(".cop");
 end.innerHTML = `all  copy rights reserved ${cop.innerHTML} ${lastend} `;
