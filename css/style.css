@@ -58,7 +58,10 @@ button{
 }
 
 
-
+.second-section{
+    min-height: 70vh;
+    margin-bottom:50px ;
+}
 
 
 .col{
