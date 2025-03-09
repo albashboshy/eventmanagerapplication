@@ -104,7 +104,7 @@ item.forEach((element,index) => {
     retnData.indexOf(retnData[btndel.getAttribute("value")]) + 1
   }`;
   p1.innerHTML = `Event Name:${element.a} `;
-  p2.innerHTML = ` evnet palce : ${element.b}`;
+  p2.innerHTML = ` Event By : ${element.b}`;
   p3.innerHTML = `the Date of event on : ${new Date(
     element.c
   ).toDateString()}`;
